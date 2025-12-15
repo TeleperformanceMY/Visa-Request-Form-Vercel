@@ -15,7 +15,11 @@ interface VisaCategory {
   notApplicable: string[]
 }
 
-export function VisaToolMain() {
+type VisaToolMainProps = {
+  language: "en" | "ja" | "zh"
+}
+
+export function VisaToolMain({ language }: VisaToolMainProps) {
   const [selectedNationality, setSelectedNationality] = useState<string>("")
   const [selectedDestinationCountry, setSelectedDestinationCountry] = useState<string | null>(null)
   const [selectedVisaType, setSelectedVisaType] = useState<string | null>(null)
@@ -23,8 +27,6 @@ export function VisaToolMain() {
   const [visaData, setVisaData] = useState<VisaCategory | null>(null)
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState<string | null>(null)
-  const [language, setLanguage] = useState<"en" | "ja" | "zh">("en")
-  const [showLanguageDropdown, setShowLanguageDropdown] = useState(false)
 
   useEffect(() => {
     if (!selectedNationality) {
@@ -61,11 +63,6 @@ export function VisaToolMain() {
     setSelectedVisaType(visaType)
   }
 
-  const handleLanguageChange = (lang: "en" | "ja" | "zh") => {
-    setLanguage(lang)
-    setShowLanguageDropdown(false)
-  }
-
   const translations = {
     en: {
       title: "Visa Requirement & Application",
@@ -100,57 +97,6 @@ export function VisaToolMain() {
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <div className="flex items-center justify-end mb-8">
-        {/* Language dropdown in top-right corner */}
-        <div className="relative">
-          <button
-            onClick={() => setShowLanguageDropdown(!showLanguageDropdown)}
-            className="flex items-center gap-2 px-4 py-2 rounded-lg bg-muted text-foreground hover:bg-muted/80 transition-colors"
-          >
-            <span className="text-2xl">🌐</span>
-            <span className="hidden sm:inline text-sm font-medium">
-              {language === "en" ? "EN" : language === "ja" ? "JA" : "ZH"}
-            </span>
-          </button>
-
-          {/* Dropdown menu */}
-          {showLanguageDropdown && (
-            <div className="absolute right-0 mt-2 w-32 bg-card border border-border rounded-lg shadow-lg z-50">
-              <button
-                onClick={() => handleLanguageChange("en")}
-                className={`w-full text-left px-4 py-2 text-sm transition-colors ${
-                  language === "en"
-                    ? "bg-primary text-primary-foreground font-medium"
-                    : "text-foreground hover:bg-muted"
-                }`}
-              >
-                {t.english}
-              </button>
-              <button
-                onClick={() => handleLanguageChange("ja")}
-                className={`w-full text-left px-4 py-2 text-sm transition-colors ${
-                  language === "ja"
-                    ? "bg-primary text-primary-foreground font-medium"
-                    : "text-foreground hover:bg-muted"
-                }`}
-              >
-                {t.japanese}
-              </button>
-              <button
-                onClick={() => handleLanguageChange("zh")}
-                className={`w-full text-left px-4 py-2 text-sm transition-colors ${
-                  language === "zh"
-                    ? "bg-primary text-primary-foreground font-medium"
-                    : "text-foreground hover:bg-muted"
-                }`}
-              >
-                {t.chinese}
-              </button>
-            </div>
-          )}
-        </div>
-      </div>
-
       {/* Combined Visa Requirement Check & Application Form */}
       <div>
         <h1 className="text-3xl font-bold text-foreground mb-8">{t.title}</h1>

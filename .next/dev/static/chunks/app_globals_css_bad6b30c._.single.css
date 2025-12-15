@@ -1063,6 +1063,14 @@
     width: 100px;
   }
 
+  .w-\[150px\] {
+    width: 150px;
+  }
+
+  .w-\[180px\] {
+    width: 180px;
+  }
+
   .w-auto {
     width: auto;
   }

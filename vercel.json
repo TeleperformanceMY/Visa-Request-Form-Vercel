@@ -1,7 +1,6 @@
 {
-  "buildCommand": "npm run build",
+  "buildCommand": "pnpm run build",
   "outputDirectory": ".next",
-  "installCommand": "npm ci",
   "env": {
     "NEXT_PUBLIC_APP_NAME": "Visa Requirement Tool"
   },

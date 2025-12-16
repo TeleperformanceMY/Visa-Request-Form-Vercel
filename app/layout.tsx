@@ -38,8 +38,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`font-sans antialiased`}>
+      <body className="font-sans antialiased flex min-h-screen flex-col">
         {children}
+
+        <footer className="mt-auto border-t border-border bg-card py-6">
+          <div className="mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8 space-y-1">
+            <p className="text-sm text-muted-foreground">© 2025 TP.COM All rights reserved.</p>
+            <p className="text-xs font-semibold tracking-wide text-foreground">#MoreTogether</p>
+          </div>
+        </footer>
+
         <Analytics />
       </body>
     </html>

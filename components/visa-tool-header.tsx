@@ -1,5 +1,6 @@
 'use client'
 
+import Image from "next/image"
 import { GlobeIcon } from "lucide-react"
 
 import {
@@ -20,6 +21,17 @@ export function VisaToolHeader({ language, onLanguageChange }: VisaToolHeaderPro
     <header className="border-b border-border bg-card shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
         <div className="relative flex justify-center">
+          <div className="absolute left-0 top-0 flex items-center">
+            <Image
+              src="/TPLogo11.png"
+              alt="TP Logo"
+              width={70}
+              height={80}
+              className="rounded-md bg-muted"
+              priority
+            />
+          </div>
+
           <div className="absolute right-0 top-0">
             <Select value={language} onValueChange={onLanguageChange}>
               <SelectTrigger className="w-[150px]">

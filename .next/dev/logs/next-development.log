@@ -1,30 +1,6 @@
-[00:00:01.389] Server  LOG      ✓ Ready in 882ms
-[00:00:16.132] Server  LOG      ○ Compiling / ...
-[00:00:22.817] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:23.300] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:00:23.300] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[00:00:23.301] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765786739845}
-[00:02:19.815] Server  LOG     [v0] Fetching visa data for Andorra (AD) from external API
-[00:02:23.501] Server  LOG     [v0] API response for AD: {}
-[00:02:23.502] Server  LOG     [v0] Processed visa data for AD: 198 total countries
-[00:04:04.063] Browser ERROR   uncaughtError: TypeError: onLanguageChange is not a function
-[00:04:05.382] Browser ERROR   uncaughtError: TypeError: onLanguageChange is not a function
-[00:04:06.500] Browser ERROR   uncaughtError: TypeError: onLanguageChange is not a function
-[00:04:06.948] Server  LOG      ✓ Compiled in 314ms
-[00:04:07.151] Browser ERROR   uncaughtError: ReferenceError: language is not defined
-[00:04:23.666] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:04:23.683] Server  LOG      ✓ Compiled in 307ms
-[00:04:24.295] Server  ERROR    ⨯ TypeError: Cannot read properties of undefined (reading 'title')
-[00:04:24.365] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'title')
-[00:04:25.764] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:04:26.237] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'title')
-[00:04:39.098] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:04:40.934] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:04:41.338] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:04:41.338] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[00:04:41.338] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765786997876}
-[00:05:01.611] Server  LOG     [v0] Fetching visa data for Albania (AL) from external API
-[00:05:02.264] Server  LOG     [v0] API response for AL: {}
-[00:05:02.265] Server  LOG     [v0] Processed visa data for AL: 198 total countries
-[00:08:13.974] Server  LOG      ✓ Compiled in 3.6s
-[00:08:17.631] Server  LOG      ✓ Compiled in 725ms
+[00:00:04.727] Server  LOG      ✓ Ready in 3.3s
+[00:00:07.821] Server  LOG      ○ Compiling / ...
+[00:00:22.205] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:23.458] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:23.458] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:00:23.458] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765866387345}
